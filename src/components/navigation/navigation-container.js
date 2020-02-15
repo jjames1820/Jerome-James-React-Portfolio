@@ -13,16 +13,16 @@ constructor(){
                     Home
                 </NavLink>
 
-                <NavLink to="/works">
-                    Works
+                <NavLink to="/about-me">
+                    About
                 </NavLink>
 
-                <NavLink to="/donate">
-                    Donate
-                </NavLink>
-                    
                 <NavLink to="/contact">
                     Contact
+                </NavLink>
+
+                <NavLink to="/blog">
+                    Blog
                 </NavLink>
             </div>
         )

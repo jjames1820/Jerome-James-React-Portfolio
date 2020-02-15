@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 import PortfolioItem from "./portfolio-item"
 
 export default class PortfolioContainer extends Component {
@@ -11,9 +10,10 @@ export default class PortfolioContainer extends Component {
         this.state = {
             title: "another title",
             data: [
-                { title: "apple", category: "sweet" },
-                { title: "orange", category: "sweet" },
-                { title: "lemon", category: "sour" }
+                { title: "Quip", category: "eCommerce", slug:"quip"},
+                { title: "Eventbrite", category: "Scheduling", slug:"eventbrite" },
+                { title: "Ministry Safe", category: "Enterprise", slug:"ministry-safe" },
+                { title: "SwingAway", category: "eCommerce", slug:"swingaway" }
             ]
         }
         this.handleClickFilter = this.handleClickFilter.bind(this);
@@ -29,7 +29,7 @@ export default class PortfolioContainer extends Component {
 
     portfolioItems() {
         return this.state.data.map(item => {
-            return <PortfolioItem title={item.title} />;
+            return <PortfolioItem title={item.title} slug={item.slug} />;
         })
     }
 
